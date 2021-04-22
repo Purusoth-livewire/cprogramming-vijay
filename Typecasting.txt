@@ -1,0 +1,102 @@
+pecasting:
+===========
+converting one data type into another.
+
+Type:
+=====
+1.Implicit Typecasting
+2.Explicit Typecasting
+
+
+size
+char---------->int---------->float------------>double
+
+
+1.Implicit Typecasting:
+=======================
+automatic conversion for one data type to another.
+
+int i=10;
+float p=i;
+printf(f)
+
+
+Program: 
+========
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int a=10;
+  float f;
+  clrscr();
+
+  printf("a : %d\n",a);
+  f=a;//float<---int
+  printf("f : %f\n",f);
+  getch();
+}
+
+
+
+2.Explicit Typecasting:
+=======================
+manually convert one type to another.
+
+keyword:
+========
+(datatype)var;
+
+example:
+========
+int a=10;
+float p;
+p=(float)a;
+
+types:
+======
+upcasting---------lower to upper(no data loss)
+downcasting-----upper to lower(data loss)
+
+
+Explicit upcasting:
+===================
+upcasting ----> convert low size var into high size var.
+no data loss---orginal data can't affected.
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int a=10;//size a--2 bytes
+  float f;//size f--4 bytes
+  clrscr();
+
+  printf("a : %d\n",a);
+  f=(float)a;//float(4)<---int(2)
+  printf("f : %f\n",f);//
+  getch();
+}
+
+
+Explicit downcasting:
+=====================
+downcasting ----> convert high size var into low size var.
+data loss---orginal data can be affected.
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int a;//size a--2 bytes
+  float f=5.1234;//size f--4 bytes
+  clrscr();
+
+  printf("f : %f\n",f);
+  a=(int)f;//int(2)<----float(4)
+  printf("a : %d\n",a);
+  getch();
+}
