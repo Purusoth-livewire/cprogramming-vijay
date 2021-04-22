@@ -1,0 +1,46 @@
+6.unary or Increment/Decrement Operator:
+========================================
+
+increment/decrement by 1
+
+pre increment------(++a or a=1+a)//first inc then print
+post increment-----(a++ or a=a+1)//1st print then inc
+
+pre decrement------(--a or a=-1+a)//1st dec then print
+post decrement-----(a-- or a=a-1)//1st print then dec
+
+
+Program:
+========
+
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+  int a;
+  clrscr();
+
+
+  //pre increment
+  a=10;
+  printf("++a : %d\n",++a);//a=1+a
+  printf("a : %d\n\n",a);
+
+  //post increment
+  a=10;
+  printf("a++ : %d\n",a++);//a=a+1
+  printf("a : %d\n\n",a);
+
+  //pre decrement
+  a=10;
+  printf("--a : %d\n",--a);//a=-1+a
+  printf("a : %d\n\n",a);
+
+  //post decrement
+  a=10;
+  printf("a-- : %d\n",a--);//a=a-1
+  printf("a : %d\n\n",a);
+
+  getch();
+}
